@@ -2,8 +2,8 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f7f9;
-  color: #333;
+  background-color: #fff7e6;
+  color: #5c4033;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
   background-color: #fff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(92, 64, 51, 0.1);
   width: 80%;
   max-width: 800px;
   display: flex;
@@ -24,7 +24,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #2c3e50;
+  color: #5c4033;
   margin-bottom: 20px;
 }
 
@@ -54,27 +54,28 @@ h1 {
 
 .file-upload button,
 .download-template {
-  background-color: #3498db;
-  color: white;
+  background-color: #ffd700;
+  color: #5c4033;
   padding: 12px 20px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .file-upload button:hover,
 .download-template:hover {
-  background-color: #2980b9;
+  background-color: #ffed4a;
 }
 
 .results {
   margin-top: 30px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ffe5b4;
   padding: 20px;
   border-radius: 8px;
-  background-color: #f9f9f9;
+  background-color: #fffaf0;
 }
 
 .error-list {
@@ -96,29 +97,64 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 6px;
   overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+  transition: max-height 0.3s ease;
+}
+
+.code-section {
+  margin-top: 15px;
+}
+
+.toggle-code-btn {
+  background-color: #ffd700;
+  color: #5c4033;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-code-btn:hover {
+  background-color: #ffed4a;
+}
+
+.corrected-code.expanded {
+  border-top: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .download-template {
   margin-top: 15px;
-  background-color: #2ecc71;
+  background-color: #ffd700;
 }
 
 .download-template:hover {
-  background-color: #27ae60;
+  background-color: #ffed4a;
 }
 
 .download-zip {
-    background-color: #27ae60;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin-top: 15px;
+  background-color: #ffd700;
+  color: #5c4033;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .download-zip:hover {
-    background-color: #2ecc71;
+  background-color: #ffed4a;
 }
