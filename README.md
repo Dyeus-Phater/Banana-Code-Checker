@@ -1,6 +1,6 @@
 # Banana Code Checker 🍌
 
-Banana Code Checker is a powerful web application designed to help developers identify and analyze code tag mismatches between original and modified files. It's particularly useful for ensuring that important code structures enclosed in delimiters (like parentheses, brackets, and braces) are preserved during code modifications.
+Banana Code Checker is a tasty web application designed to help developers identify and analyze code tag mismatches between original and modified files. It's particularly useful for ensuring that important code structures enclosed in delimiters (like parentheses, brackets, and braces) are preserved during code modifications.
 
 ## Features ✨
 
