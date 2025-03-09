@@ -85,4 +85,5 @@ This project is open source and available under the MIT License.
 
 ---
 
-Made with 🍌 by the Banana Code Checker team
+Made with 🍌 by Mister.
+Original idea by Lobo Nintendista.
