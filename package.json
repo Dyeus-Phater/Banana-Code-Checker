@@ -15,9 +15,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@electron/remote": "^2.1.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "electron": "^35.0.0",
+    "electron-builder": "^25.1.8",
     "vite": "^4.2.0"
   }
 }

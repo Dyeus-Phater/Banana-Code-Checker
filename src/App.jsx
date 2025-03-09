@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import JSZip from 'jszip';
+import SupportModal from './components/SupportModal';
 
 const translations = {
   en: {
@@ -137,6 +138,7 @@ function App() {
   const [results, setResults] = useState(null);
   const [language, setLanguage] = useState('en');
   const [comparisonMethod, setComparisonMethod] = useState('byName'); // Default to comparing by name
+  const [isSupportModalOpen, setIsSupportModalOpen] = useState(false);
   const fileInputRef = useRef(null);
 
   const handleOriginalFileChange = (e) => {
@@ -285,7 +287,21 @@ function App() {
   const currentTranslations = translations[language];
 
   return (
-    <div className="container">
+    <div className="app-wrapper">
+      <div className="support-button-container">
+        <button 
+          className="support-button" 
+          onClick={() => setIsSupportModalOpen(true)}
+          title="About & Support"
+        >
+          ?
+        </button>
+      </div>
+      <SupportModal 
+        isOpen={isSupportModalOpen} 
+        onClose={() => setIsSupportModalOpen(false)} 
+      />
+      <div className="container">
       <h1>{currentTranslations.title}</h1>
       <div className="file-upload">
         <label htmlFor="originalFiles">{currentTranslations.originalFilesLabel}</label>
@@ -355,6 +371,7 @@ function App() {
           ))}
         </div>
       )}
+      </div>
     </div>
   );
 }
